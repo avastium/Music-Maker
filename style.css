@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+table {
+  margin: 30px auto;
+  text-align: center;
+}
+table td {
+  height: 80px;
+  width: 80px;
+}
+.control {
+  text-align: center;
+}
+.control input {
+  margin: 30px;
+}
+.control input[type="button"] {
+  width: 80px;
+  height: 40px;
+}
+.triangle {
+  margin: auto;
+  display: none;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #e7e7e7;
+}
+.box {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+  background-color: #e7e7e7;
+}
+.orange {
+  background-color: orange;
+}
+.yellowgreen {
+  background-color: yellowgreen;
+}
+.skyblue {
+  background-color: skyblue;
+}
+.magenta {
+  background-color: magenta;
+}

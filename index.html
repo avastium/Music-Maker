@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>!
+<body>
+  <table>
+    <tr id="kick">
+      <td><b>KICK</b></td>
+      <td><div class="box" id="kick-0" onclick="switchColor('kick-0')"></div></td>
+      <td><div class="box" id="kick-1" onclick="switchColor('kick-1')"></div></td>
+      <td><div class="box" id="kick-2" onclick="switchColor('kick-2')"></div></td>
+      <td><div class="box" id="kick-3" onclick="switchColor('kick-3')"></div></td>
+      <td><div class="box" id="kick-4" onclick="switchColor('kick-4')"></div></td>
+      <td><div class="box" id="kick-5" onclick="switchColor('kick-5')"></div></td>
+      <td><div class="box" id="kick-6" onclick="switchColor('kick-6')"></div></td>
+      <td><div class="box" id="kick-7" onclick="switchColor('kick-7')"></div></td>
+      <td><div class="box" id="kick-8" onclick="switchColor('kick-8')"></div></td>
+      <td><div class="box" id="kick-9" onclick="switchColor('kick-9')"></div></td>
+    </tr>
+    <tr id="clap">
+      <td><b>CLAP</b></td>
+      <td><div class="box" id="clap-0" onclick="switchColor('clap-0')"></div></td>
+      <td><div class="box" id="clap-1" onclick="switchColor('clap-1')"></div></td>
+      <td><div class="box" id="clap-2" onclick="switchColor('clap-2')"></div></td>
+      <td><div class="box" id="clap-3" onclick="switchColor('clap-3')"></div></td>
+      <td><div class="box" id="clap-4" onclick="switchColor('clap-4')"></div></td>
+      <td><div class="box" id="clap-5" onclick="switchColor('clap-5')"></div></td>
+      <td><div class="box" id="clap-6" onclick="switchColor('clap-6')"></div></td>
+      <td><div class="box" id="clap-7" onclick="switchColor('clap-7')"></div></td>
+      <td><div class="box" id="clap-8" onclick="switchColor('clap-8')"></div></td>
+      <td><div class="box" id="clap-9" onclick="switchColor('clap-9')"></div></td>
+    </tr>
+    <tr id="hat">
+      <td><b>HAT</b></td>
+      <td><div class="box" id="hat-0" onclick="switchColor('hat-0')"></div></td>
+      <td><div class="box" id="hat-1" onclick="switchColor('hat-1')"></div></td>
+      <td><div class="box" id="hat-2" onclick="switchColor('hat-2')"></div></td>
+      <td><div class="box" id="hat-3" onclick="switchColor('hat-3')"></div></td>
+      <td><div class="box" id="hat-4" onclick="switchColor('hat-4')"></div></td>
+      <td><div class="box" id="hat-5" onclick="switchColor('hat-5')"></div></td>
+      <td><div class="box" id="hat-6" onclick="switchColor('hat-6')"></div></td>
+      <td><div class="box" id="hat-7" onclick="switchColor('hat-7')"></div></td>
+      <td><div class="box" id="hat-8" onclick="switchColor('hat-8')"></div></td>
+      <td><div class="box" id="hat-9" onclick="switchColor('hat-9')"></div></td>
+    </tr>
+    <tr id="snare">
+      <td><b>SNARE</b></td>
+      <td><div class="box" id="snare-0" onclick="switchColor('snare-0')"></div></td>
+      <td><div class="box" id="snare-1" onclick="switchColor('snare-1')"></div></td>
+      <td><div class="box" id="snare-2" onclick="switchColor('snare-2')"></div></td>
+      <td><div class="box" id="snare-3" onclick="switchColor('snare-3')"></div></td>
+      <td><div class="box" id="snare-4" onclick="switchColor('snare-4')"></div></td>
+      <td><div class="box" id="snare-5" onclick="switchColor('snare-5')"></div></td>
+      <td><div class="box" id="snare-6" onclick="switchColor('snare-6')"></div></td>
+      <td><div class="box" id="snare-7" onclick="switchColor('snare-7')"></div></td>
+      <td><div class="box" id="snare-8" onclick="switchColor('snare-8')"></div></td>
+      <td><div class="box" id="snare-9" onclick="switchColor('snare-9')"></div></td>
+    </tr>
+    <tr id="play">
+      <td></td>
+      <td><div class="triangle" id="arrow0"></div></td>
+      <td><div class="triangle" id="arrow1"></div></td>
+      <td><div class="triangle" id="arrow2"></div></td>
+      <td><div class="triangle" id="arrow3"></div></td>
+      <td><div class="triangle" id="arrow4"></div></td>
+      <td><div class="triangle" id="arrow5"></div></td>
+      <td><div class="triangle" id="arrow6"></div></td>
+      <td><div class="triangle" id="arrow7"></div></td>
+      <td><div class="triangle" id="arrow8"></div></td>
+      <td><div class="triangle" id="arrow9"></div></td>
+    </tr>
+  </table>
+
+  <div class="control">
+    <input type="range" name="intervalTime" id="intervalTime" min="100" max="1000" step="50" value="500" oninput="updateIntervalValue(this.value)">
+    <label for="intervalTime">Interval (<span id="intervalValue">500</span> ms)</label>
+    <br>
+    <input type="button" class="clear-button" value="CLEAR" onclick="clearArea()">
+    <input type="button" class="stop-button" value="STOP" onclick="stopPlay()">
+    <input type="button" class="play-button" value="PLAY" onclick="startPlay()">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
